@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oluwamayowa's CV</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://font.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        function openForm() {
+            document.getElementById("ContactForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("ContactForm").style.display = "none";
+        }
+
+        // Function to notify user of error in thier input 
+        function printError(elementId, errMsg) {
+            document.getElementById(elementId).innerHTML = errMsg;
+        }
+
+
+
+
+
+        // function to validate form 
+        /**
+        function validateForm() {
+            // Define variables and assign them to form element values 
+            var name = document.ContactForm.name.value;
+            var email = document.ContactForm.email.value;
+            var title = document.ContactForm.title.value;
+            var message = document.ContactForm.message.value;
+
+            // Defining error variables with a default value
+            var nameErr = emailErr = titleErr = messageErr = submitErr = true;
+
+            // Validate name
+            if (name == "") {
+                printError("nameErr", "Please enter your name");
+
+            } else {
+                var regex = /^[a-zA-Z\s]+$/;
+                if (regex.test(name) === false) {
+                    printError("nameErr", "Please enter a valid name");
+                } else if (name.length < 4) {
+                    printError("nameErr", "Name must have a minimum of 4 characters");
+                } else {
+                    printError("nameErr", "");
+                    nameErr = false;
+                }
+            }
+
+            // validate email
+            if (email == "") {
+                printError("emailErr", "Please enter your email address");
+            } else {
+                // Regular expression for basic email validation
+                var regex = /^\S+@\S+\.\S+$/;
+                if (regex.test(email) === false) {
+                    printError("emailErr", "Please enter a valid email address");
+                } else {
+                    printError("emailErr", "");
+                    emailErr = false;
+                }
+            }
+            // validate that user entered a title
+            if (title == "") {
+                printError("titleErr", "Please enter your message title");
+            } else {
+                printError("titleErr", "");
+                titleErr = false;
+            }
+        }
+
+
+        // validate message
+        if (message == "") {
+            printError("messageErr", "Please enter your message");
+        } else {
+            if (message.length < 20) {
+                printError("messageErr", "Message must have a minimum of 20 characters");
+            } else {
+                printError("messageErr", "");
+                messageErr = false;
+            }
+        }
+
+        // Prevent the form from being submitted if there are any errors
+        if ((nameErr || emailErr || titleErr || messageErr) == true) {
+            return false;
+        }
+
+        if (!(nameErr || emailErr || titleErr || messageErr) == true) {
+            printError("submitErr", "Your message has been sent successfully.");
+        }**/
+    </script>
+    <div id="left_side">
+        <div class="profile_name">
+            <img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566951945/HNG/images_me_1_fc45kt.png">
+            <h2> OLUWAMAYOWA FADAIRO
+            </h2>
+            <h5></h5>
+
+            <h3> <span class="icon"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566955009/HNG/icons8-idea-64_b0ll4w.png"> </span>Objective
+                <hr>
+            </h3>
+            <br>
+            <p>To work effectively in a team of innovative people with the common goal of providing intelligent solutions to diverse fields using technology as a tool. While using my technical skills, organizational skills and educational background to work
+                effectively and provide creative and innovative solutions to industry-based challenges.</p>
+        </div>
+
+        <div class="profile_contact">
+            <h3> <span class="icon"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566948001/HNG/icons8-address-book-2-50_odfkfc.png"> </span>Contact
+                <hr>
+            </h3>
+            <table>
+                <tr>
+                    <td>
+                        <span class="icon3"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566978358/HNG/icons8-address-50_clrcmw.png"></span></td>
+                    <td>
+                        <p> <i>Plot 1011A Hs 7 Sector F 1st avenue FHA Lugbe Abuja.</i></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="icon3"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566978767/HNG/icons8-phone-50_zjiqhp.png"></span> </td>
+                    <td>
+                        <p> <i>+2348038287791 </i></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="icon3"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566978769/HNG/icons8-email-open-50_q5jjj6.png"></span></td>
+                    <td>
+                        <p> <i><a href="mailto:e_fadairo@yahoo.com">e_fadairo@yahoo.com</a></i> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="icon3"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566978770/HNG/icons8-linkedin-50_yebsmj.png"></span></td>
+                    <td>
+                        <p> <a href="https://www.linkedin.com/in/oluwamayowa-fadairo-6460b282/">Oluwamayowa Fadairo</a></p>
+                    </td>
+                </tr>
+
+            </table>
+            <button class="Open-Form-btn" onclick="openForm()">Contact Me</button>
+        </div>
+        <div class="skills">
+            <h3> <span class="icon"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566949227/HNG/icons8-cv-50_snrhc4.png"> </span> Skills
+                <hr>
+            </h3>
+
+
+
+
+            <ul>
+                <li>
+                    Computer Networking
+                </li>
+                <li>
+                    Video Editing and Motion graphics </br>
+                </li>
+                <li>
+                    Web Development (HTML5, PHP, CSS, wordpress)</br>
+                </li>
+                <li>
+                    Database Administration</br>
+                </li>
+                <li>
+                    Microsoft Office (word, excel, PowerPoint, access)</br>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="right_side">
+        <div class="work_exp">
+            <h3> <span class="icon2"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566951357/HNG/icons8-work-100_fodfjz.png"> </span> Work Experience
+                <hr> </h3>
+            <h4> <em>USAID Global Health Supply Chain, <span class="right">September 2018 - PRESENT</span> </h4>
+
+            <p>
+                <b>Digital Media Consultant: </b>Responsible for the development, production and packaging of performance and success stories that speaks to the impact of the project across the task orders within the country. Packaged products in form of info-graphics, pictures , documentaries , short
+                videos for social media, tweets etc.
+
+            </p>
+            <h4> Compugeen Africa, <span class="right">October  2015 - December 2017 </span> </h4>
+
+            <p>
+                <b> Technology Consultant Associate: </b> Support clients (like Zenith Bank, GNPC Ghana, Zuma Energy etc. ) with implementation of IT solutions such as Sharepoint, Microsoft Exchange, SAP S4Hana, SAP Netweaver and SAP Audit management system.Documentation and
+                training of in-house IT administrators on operation and maintenance of implemented systems.
+            </p>
+            <h4> <em>Castadiva LTD, </em> <span class="right">July 2015 - October  2015 </span> </h4>
+
+            <p>
+                <b> Intern: </b>Support clients with website design and management. Hardware troubleshooting and repairs. Management of interior design projects.
+            </p>
+        </div>
+        <div class="pskills">
+            <h3><span class="icon2"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566952459/HNG/icons8-personal-growth-100_umiezf.png"> </span>Personal Skills
+                <hr> </h3>
+            <table>
+                <td>
+                    <ul>
+                        <li><i> Research and Problem Solving </i> </li> <br>
+                        <li> <i>Teamwork </i> </li>
+                    </ul>
+
+                </td>
+
+                <td>
+                    <ul style="margin-left: 20px;">
+                        <li> <i>Communication </i> </li> <br>
+                        <li> <i>Fast Learner</i></li>
+                    </ul>
+                </td>
+
+            </table>
+        </div>
+
+        <div class="edu">
+            <h3><span class="icon2"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566951359/HNG/icons8-education-50_hn1a6l.png"> </span>Education
+                <hr> </h3>
+            <h4> MSc. Electronic Engineering (Distinction) <span class="right"> <em>(2014-2015)</span></h4>
+            <em>De Montfort University Leicester, United Kingdom.</em>
+            <br> RESEARCH PROJECT: XSPICE Code-model of switching audio power amplifiers
+
+            <h4>BSc. Industrial physics: Electronics and IT Application (2nd class Upper division) <span class="right">(2008-2012)</span></h4>
+            <em>Covenant University P.M.B. 1023, Ota, Ogun State.</em></br>
+            RESEARCH PROJECT: Design and Construction of a pure sine wave inverter.
+
+        </div>
+
+        <div class="ref">
+            <h4><span class="icon2"><img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1566949227/HNG/icons8-cv-50_snrhc4.png"> </span>Reference
+                <hr>
+            </h4>
+            <p>
+                Available upon request
+            </p>
+        </div>
+
+    </div>
+    <div class="form-container">
+        <form class="popup_form" id="ContactForm" action="#">
+            <h4 style="align-self: center">Contact Form</h4>
+            <h5>Drop a Message and I'll get back within the hour</h5>
+
+            <label for="name"><b>Name: </b></label> &nbsp; &nbsp;
+            <input type="text" placeholder="firstname Surname" name="name" minlength="4" required></br>
+            <div id="nameErr"></div>
+            <label for="email"><b>Email: </b></label> &nbsp; &nbsp;
+            <input type="text" placeholder="Enter your valid Email address" name="email" required></br>
+            <div id="emailErr"></div>
+            <label for="title"><b>Title: </b></label> &nbsp; &nbsp;
+            <input type="text" placeholder="Enter your message title" name="title" required></br>
+            <div id="titleErr"></div>
+            <label for="message"><b>Messsage:</b></label> <br>
+            <textarea name="message" rows="4" cols="20" placeholder="How can I be of service to you?" minlength="20" required></textarea></br>
+            <br>
+            <div id="messageErr"></div>
+            <button type="submit" class="btn" id="submitBtn" disabled> Send Message </button> &nbsp; &nbsp;
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            <div id="submitErr"></div>
+        </form>
+
+    </div>
+
+    <footer>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>
