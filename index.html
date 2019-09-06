@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oluwamayowa's CV</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Validator.js"></script>
 
     <link href="https://font.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
@@ -24,6 +25,18 @@
         // Function to notify user of error in thier input 
         function printError(elementId, errMsg) {
             document.getElementById(elementId).innerHTML = errMsg;
+        }
+
+        function nameCheck() {
+            let name = document.getElementById("name");
+            let letters = /^[A-Za-z]+$/;
+            if (name.match(letters)) {
+                return true;
+                name.focus();
+            } else {
+                alert("Numbers not allowed Please enter only alphabets ");
+                return false;
+            }
         }
     </script>
     <div id="left_side">
@@ -178,19 +191,21 @@
             <h5>Drop a Message and I'll get back within the hour</h5>
 
             <label for="name"><b>Name: </b></label> &nbsp; &nbsp;
-            <input type="text" placeholder="firstname Surname" name="name" minlength="4" required></br>
+            <input type="text" placeholder="firstname Surname" id="name" name="name" minlength="4" required oninvalid="this.setCustomValidity('Your Name should have at least 4 characters')" oninput="this.setCustomValidity('')"></br>
+
+
             <div id="nameErr"></div>
             <label for="email"><b>Email: </b></label> &nbsp; &nbsp;
-            <input type="text" placeholder="Enter your valid Email address" name="email" required></br>
+            <input type="text" placeholder="Enter your valid Email address" name="email" required oninvalid="this.setCustomValidity('That is not a valid email format xxxx@xxxxx.xxx')" oninput="this.setCustomValidity('')"></br>
             <div id="emailErr"></div>
             <label for="title"><b>Title: </b></label> &nbsp; &nbsp;
-            <input type="text" placeholder="Enter your message title" name="title" required></br>
+            <input type="text" placeholder="Enter your message title" name="title" required oninvalid="this.setCustomValidity('I need to know what your message is about to respond correctly, Please enter a Message title. Thanks')" oninput="this.setCustomValidity('')"></br>
             <div id="titleErr"></div>
             <label for="message"><b>Messsage:</b></label> <br>
-            <textarea name="message" rows="4" cols="20" placeholder="How can I be of service to you?" minlength="20" required></textarea></br>
+            <textarea name="message" rows="4" cols="20" placeholder="How can I be of service to you?" minlength="20" required oninvalid="this.setCustomValidity('Your Message should have at least 20 characters, please adjust. Thanks')" oninput="this.setCustomValidity('')"></textarea></br>
             <br>
             <div id="messageErr"></div>
-            <button type="submit" class="btn" id="submitBtn"> Send Message </button> &nbsp; &nbsp;
+            <button type="submit" class="btn" id="submitBtn">Send Message </button> &nbsp; &nbsp;
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
             <div id="submitErr"></div>
         </form>
