@@ -155,12 +155,18 @@ footer {
     left: 35%;
     z-index: 23;
     border-radius: 25px;
-    width: 400px;
-    height: 420px;
+    width: 40%;
+    height: 65%;
     background-color: whitesmoke;
     padding: 25px;
+    padding-left: 45px;
     margin: auto;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.67);
+}
+
+.popup_form textarea {
+    width: 320px;
+    height: 120px;
 }
 
 
