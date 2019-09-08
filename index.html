@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oluwamayowa Fadairo's Resume, My goal is to  work effectively in a team of innovative people with the common goal of providing intelligent solutions to diverse fields using technology as a tool. While using my technical skills, organizational skills and educational background to work
+    effectively and provide creative and innovative solutions to industry-based challenges. ">
+    <meta name="keywords" content="Video Editing, Motion graphics, HTML5, CSS, ABUJA, Modern Webdesign, Videographer, Animations">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oluwamayowa's CV</title>
     <link rel="stylesheet" href="style.css">
@@ -186,7 +189,7 @@
 
     </div>
     <div class="form-container">
-        <form class="popup_form" id="ContactForm" action="#">
+        <form class="popup_form" id="ContactForm" action="form.php" method="POST">
             <h4 style="align-self: center">Contact Form</h4>
             <h5>Drop a Message and I'll get back within the hour</h5>
 
@@ -205,7 +208,7 @@
             <textarea name="message" rows="4" cols="20" placeholder="How can I be of service to you?" minlength="20" required oninvalid="this.setCustomValidity('Your Message should have at least 20 characters, please adjust. Thanks')" oninput="this.setCustomValidity('')"></textarea></br>
             <br>
             <div id="messageErr"></div>
-            <button type="submit" class="btn" id="submitBtn">Send Message </button> &nbsp; &nbsp;
+            <button type="submit" name="submit" class="btn" id="submitBtn">Send Message </button> &nbsp; &nbsp;
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
             <div id="submitErr"></div>
         </form>
